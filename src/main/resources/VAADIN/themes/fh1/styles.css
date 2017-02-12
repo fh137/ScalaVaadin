@@ -1,0 +1,14 @@
+@import "../reindeer/legacy-styles.css";
+
+/* Changes entire background color of the application */
+/*
+.v-app {
+    background: cadetblue;
+}
+*/
+
+
+/* Changes background color for a component when you use  component.setStyleName( "bgYellow" ) */
+.bgYellow {
+    background: yellow;
+}
