@@ -6,7 +6,7 @@ apply from: 'https://raw.github.com/akhikhl/gretty/master/pluginScripts/gretty.p
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
-version = "0.1-SNAPSHOT"
+version = "0.2-SNAPSHOT"
 
 // In this section you declare where to find the dependencies of your project
 repositories {
