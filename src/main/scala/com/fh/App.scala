@@ -31,11 +31,13 @@ class App extends UI {
 
       val view = new VerticalLayout()
       view.setStyleName( "bgYellow" )   // highlight the background of this view, so that we can see it on the page
-      view.addComponent(new Label("Hello Vaadin!"))
+      view.addComponent(new Label( getMsg ))
 
       setContent(view)
     } catch {
       case t: Throwable => log.error( "Failed miserably", t )
     }
   }
+
+  def getMsg = "Hello Vaadin!"
 }

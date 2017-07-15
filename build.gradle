@@ -6,7 +6,7 @@ apply from: 'https://raw.github.com/akhikhl/gretty/master/pluginScripts/gretty.p
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
-version = "0.1-SNAPSHOT"
+version = "0.2-SNAPSHOT"
 
 // In this section you declare where to find the dependencies of your project
 repositories {
@@ -16,21 +16,21 @@ repositories {
 
 // In this section you declare the dependencies for your production and test code
 dependencies {
-    compile 'org.scala-lang:scala-library:2.11.7'
+    compile 'org.scala-lang:scala-library:2.12.2'
 
 
     // Vaadin libraries
-    compile 'com.vaadin:vaadin-server:7.7.7'
-    compile 'com.vaadin:vaadin-themes:7.7.7'
-    compile 'com.vaadin:vaadin-client-compiled:7.7.7'
+    compile 'com.vaadin:vaadin-server:8.0.0'
+    compile 'com.vaadin:vaadin-themes:8.0.0'
+    compile 'com.vaadin:vaadin-client-compiled:8.0.0'
 
 
     compile group: 'javax.servlet', name: 'javax.servlet-api', version: '3.1.0'     // shouldn't include in output war
-    compile group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.1'
+    compile group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'
 
 
     // for testing
     testCompile 'junit:junit:4.12'
-    testCompile 'org.scalatest:scalatest_2.11:2.2.4'
-    testRuntime 'org.scala-lang.modules:scala-xml_2.11:1.0.3'
+    testCompile 'org.scalatest:scalatest_2.12:3.0.1'
+    testRuntime 'org.scala-lang.modules:scala-xml_2.12:1.0.6'
 }
